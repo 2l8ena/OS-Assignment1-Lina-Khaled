@@ -31,7 +31,7 @@ class Process implements Runnable {
     private int remainingTime; // Time left for the process to finish its execution
     private int priority; //Process priority from(1-10) , where 10 is the highest
     private long creationTime; // Time when process was created
-    private long waitingTime; // Total waiting Time
+    private long waitingTime; // Total waiting Time 
     // Constructor to initialize the process with name, burst time, and time quantum , and priority
     public Process(String name, int burstTime, int timeQuantum, int priority) {
         this.name = name;
