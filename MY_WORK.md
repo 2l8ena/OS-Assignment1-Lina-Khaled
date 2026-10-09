@@ -136,10 +136,13 @@
 1.create Github with my university E-mail and make it public
 2.Forked the starter repository and rename it to OS-Assignment1-Lina-Khaled
 3. Set my actual student ID in SchedulerSimulation.java 
+
 **Challenges**:
 I wanted to make sure my student ID was updated correctly and posh it to Github
+
 **Solution**:
 I checked the file, committed the change, and verified in my repository
+
 **Time spent**:
 20 minutes
 ---
@@ -147,14 +150,18 @@ I checked the file, committed the change, and verified in my repository
 ### Entry 2 - [October 7,2026, 11 AM]
 **What I did**:
 Implemented Feature 1
+
 **Details**:
 1. Implemented Process Priority
 2. Generated random priorities from 1 to 10
 3. Display the priority when a process entered the ready queue
+
 **Challenges**:
 I need to make sure the priority was displayed without changing in FIFO of Round-Robin scheduler
+
 **Solution**:
 I added a getter method for priority and only it for display puposes
+
 **Time spent**:
 50 minutes
 ---
@@ -162,12 +169,16 @@ I added a getter method for priority and only it for display puposes
 ### Entry 3 - [October 7,2026, 5 PM]
 **What I did**:
 Tested and debugged Feature 1
+
 **Details**:
 I ran the program and checked the output to make sure every process displayed its priority correctly
+
 **Challenges**:
-I encountered a compilation error caused by incorrect string concatenation in the output statement.
+I encountered a compilation error caused by incorrect string concatenation in the output statement
+
 **Solution**:
-I corrected the missing operators and tested the program again until it ran successfully.
+I corrected the missing operators and tested the program again until it ran successfully
+
 **Time spent**:
 25 minutes
 ---
@@ -175,13 +186,17 @@ I corrected the missing operators and tested the program again until it ran succ
 ### Entry 4 - [October 8,2026, 9 PM]
 **What I did**:
 Implemented Feature 2
+
 **Details**:
 1.I added a static counter to track the total of context switches 
-2.displayed the final total after all processes completed.
+2.displayed the final total after all processes completed
+
 **Challenges**:
 I had to determine the correct location where the counter should increase
+
 **Solution**:
 I incremented the counter whenever a process started running and verified the final count in the output
+
 **Time spent**:
 1h 25min
 ---
@@ -189,14 +204,18 @@ I incremented the counter whenever a process started running and verified the fi
 ### Entry 5 - [October 9,2026, 7 PM]
 **What I did**:
 Implemented Feature 3
+
 **Details**:
 1. I added waiting time
 2. Turnaround time calculations using (System.currentTimeMillis())
 3. Created a summary final table showing the process name, burst time, waiting time, and turnaround time(Waiting+ Burst)
+   
 **Challenges**:
 I faced several compilation errors while formatting the summary table
+
 **Solution**:
 I debugged the code, corrected the syntax errors, and verified that the summary table was displayed correctly at the end of execution
+
 **Time spent**:
 2 hours
 ---
