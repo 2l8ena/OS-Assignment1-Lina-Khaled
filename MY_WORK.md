@@ -133,8 +133,8 @@
 **What I did**: Set up my repository and set up my student ID
 
 **Details**:
-1.create Github with my university E-mail and make it public
-2.Forked the starter repository and rename it to OS-Assignment1-Lina-Khaled
+1. Create Github with my university E-mail and make it public
+2. Forked the starter repository and rename it to OS-Assignment1-Lina-Khaled
 3. Set my actual student ID in SchedulerSimulation.java 
 
 **Challenges**:
@@ -188,9 +188,8 @@ I corrected the missing operators and tested the program again until it ran succ
 Implemented Feature 2
 
 **Details**:
-1.I added a static counter to track the total of context switches 
-
-2.Displayed the final total after all processes completed
+1. I added a static counter to track the total of context switches 
+2. Displayed the final total after all processes completed
 
 **Challenges**:
 I had to determine the correct location where the counter should increase
