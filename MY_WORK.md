@@ -129,69 +129,76 @@
 
 ## Your Development Log
 
-### Entry 1 - [Date and Time]
-**What I did**:
+### Entry 1 - [October 6,2026, 7:30 PM]
+**What I did**: Set up my repository and set up my student ID
 
 **Details**:
-
+1.create Github with my university E-mail and make it public
+2.Forked the starter repository and rename it to OS-Assignment1-Lina-Khaled
+3. Set my actual student ID in SchedulerSimulation.java 
 **Challenges**:
-
+I wanted to make sure my student ID was updated correctly and posh it to Github
 **Solution**:
-
+I checked the file, committed the change, and verified in my repository
 **Time spent**:
-
+20 minutes
 ---
 
-### Entry 2 - [Date and Time]
+### Entry 2 - [October 7,2026, 11 AM]
 **What I did**:
-
+Implemented Feature 1
 **Details**:
-
+1. Implemented Process Priority
+2. Generated random priorities from 1 to 10
+3. Display the priority when a process entered the ready queue
 **Challenges**:
-
+I need to make sure the priority was displayed without changing in FIFO of Round-Robin scheduler
 **Solution**:
-
+I added a getter method for priority and only it for display puposes
 **Time spent**:
-
+50 minutes
 ---
 
-### Entry 3 - [Date and Time]
+### Entry 3 - [October 7,2026, 5 PM]
 **What I did**:
-
+Tested and debugged Feature 1
 **Details**:
-
+I ran the program and checked the output to make sure every process displayed its priority correctly
 **Challenges**:
-
+I encountered a compilation error caused by incorrect string concatenation in the output statement.
 **Solution**:
-
+I corrected the missing operators and tested the program again until it ran successfully.
 **Time spent**:
-
+25 minutes
 ---
 
-### Entry 4 - [Date and Time]
+### Entry 4 - [October 8,2026, 9 PM]
 **What I did**:
-
+Implemented Feature 2
 **Details**:
-
+1.I added a static counter to track the total of context switches 
+2.displayed the final total after all processes completed.
 **Challenges**:
-
+I had to determine the correct location where the counter should increase
 **Solution**:
-
+I incremented the counter whenever a process started running and verified the final count in the output
 **Time spent**:
-
+1h 25min
 ---
 
-### Entry 5 - [Date and Time]
+### Entry 5 - [October 9,2026, 7 PM]
 **What I did**:
-
+Implemented Feature 3
 **Details**:
-
+1. I added waiting time
+2. Turnaround time calculations using (System.currentTimeMillis())
+3. Created a summary final table showing the process name, burst time, waiting time, and turnaround time(Waiting+ Burst)
 **Challenges**:
-
+I faced several compilation errors while formatting the summary table
 **Solution**:
-
+I debugged the code, corrected the syntax errors, and verified that the summary table was displayed correctly at the end of execution
 **Time spent**:
-
+2 hours
 ---
 
 ### Entry 6 - [Optional - Date and Time]
@@ -211,13 +218,13 @@
 
 > 💡 **TIP:** Fill this in **last**, after all entries are written.
 
-**Total time spent on assignment**: [X hours]
+**Total time spent on assignment**: [ 6 hours]
 
-**Most challenging part**:
+**Most challenging part**: Implementing the waiting time tracking feature and debugging compilation errors
 
-**Most interesting learning**:
+**Most interesting learning**: Understanding how Round-Robin scheduling works with Java threads
 
-**What I would do differently next time**:
+**What I would do differently next time**: I would start earlier and test each feature immediately after implementing it
 
 ---
 
