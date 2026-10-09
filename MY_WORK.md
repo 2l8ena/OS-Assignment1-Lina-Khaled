@@ -189,7 +189,8 @@ Implemented Feature 2
 
 **Details**:
 1.I added a static counter to track the total of context switches 
-2.displayed the final total after all processes completed
+
+2.Displayed the final total after all processes completed
 
 **Challenges**:
 I had to determine the correct location where the counter should increase
