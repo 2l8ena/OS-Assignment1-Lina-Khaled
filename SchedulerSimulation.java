@@ -283,7 +283,7 @@ public class SchedulerSimulation {
         }
          System.out.println("\nProcess Summary");
          System.out.println("--------------------------------------------------------------------------------");
-         System.out.println("Name\tBrust\tWaiting\tTurnaround");
+         System.out.println("Name\tBurst\tWaiting\tTurnaround");
 
         for(Process process: processMap.values()){
             System.out.println(
