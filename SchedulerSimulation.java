@@ -290,7 +290,7 @@ public class SchedulerSimulation {
             process.getName() + "\t" +
             process.getBurstTime() + "\t" + 
             process.getWaitingTime() + "\t" +
-            process.getTurnaroundTime() + "\t" +);
+            process.getTurnaroundTime() + "\t");
         }
          System.out.println("--------------------------------------------------------------------------------");
         //Display the total number of context switches
