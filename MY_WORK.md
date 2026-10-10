@@ -263,7 +263,7 @@ I debugged the code, corrected the syntax errors, and verified that the summary 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+During this assignment, I learned how Java threads can be used to simulate process execution. I learned how a class can implement the Runnable interface and then run inside a Thread object. I understood how Thread.start() begins the execution of a process and how Thread.join() makes the scheduler wait until the current process finishes its execution before continuing. I also learned how Thread.sleep() is used to simulate process execution time. By running the scheduler simulation, I observed how processes share CPU time using the Round-Robin algorithm. This assignment helped me understand how multithreading works in a practical way rather than only studying the theory
 
 ## Question 2: What was the most challenging part of this assignment?
 
@@ -271,7 +271,7 @@ I debugged the code, corrected the syntax errors, and verified that the summary 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+The most challenging part of this assignment was implementing the waiting time tracking feature. It was difficult because I had to understand where and how the waiting time should be calculated in the existing scheduler code. I also needed to add new variables and display the results correctly in the summary table. During implementation, I encountered several compilation errors that required debugging and testing. Finding the correct locations to add the new code was sometimes confusing. After carefully reviewing the program structure and testing my changes, I was able to complete the feature successfully 
 
 ## Question 3: How did you overcome the challenges you faced?
 
@@ -279,7 +279,7 @@ I debugged the code, corrected the syntax errors, and verified that the summary 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+I overcame the challenges by working step by step and testing the program after every small change. I carefully re-read the README whenever I was unsure about a requirement. When I encountered errors, I used debugging techniques and checked the output to identify the source of the problem. I also reviewed the code multiple times to understand how the scheduler and processes worked together. Testing each feature separately helped me find mistakes early and fix them more easily. This method made the assignment more manageable and improved my understanding of the code
 
 ## Question 4: How can you apply multithreading concepts in real-world applications?
 
@@ -287,19 +287,19 @@ I debugged the code, corrected the syntax errors, and verified that the summary 
 
 **Your Answer:** *(5-7 sentences)*
 
-[Write your answer here.]
+Multithreading can be applied in many real-world applications. For example, a web browser uses multiple threads to load web pages, play videos, and respond to user actions at the same time. Mobile applications also use threads so that the user interface remains responsive while data is being downloaded in the background. Online games use multithreading to handle graphics, player input, and network communication simultaneously. A music player can use one thread to play audio while another thread manages the user interface. Similar to this assignment, multiple tasks share CPU time and execute efficiently without preventing other tasks from running.
 
 ### Optional: What would you like to learn more about?
 
-[Any topics related to threading or operating systems that you're curious about?]
+I would like to learn more about advanced multithreading and thread synchronization in Java
 
 ### Optional: How confident do you feel about multithreading concepts now?
 
-[Beginner / Intermediate / Confident. What do you understand well? What needs more practice?]
+I would consider myself at an intermediate level because I understand the basics of threads and scheduling, but I still need more practice with advanced multithreading concepts 
 
 ### Optional: Feedback on the assignment
 
-[Any comments? Was it helpful? Too easy or hard? Suggestions?]
+The assignment was helpful because it improved my understanding of multithreading and CPU scheduling. It was challenging at first, but I learned a lot while working on it 
 
 ---
 
@@ -319,7 +319,8 @@ I debugged the code, corrected the syntax errors, and verified that the summary 
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+A process is an independent program, while a thread is a smaller unit that runs inside a process. In this assignment, the Process class represents a simulated process, but it is executed by a real Java thread using new Thread(process) in addProcessToQueue(). Threads share memory and have lower creation overhead than processes, which is why threads were used to simulate CPU scheduling in this project
+
 
 ## Question 2: Ready Queue Behavior
 
