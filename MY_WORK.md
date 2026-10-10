@@ -332,16 +332,22 @@ A process is an independent program, while a thread is a smaller unit that runs 
 
 **Your Answer:** *(3-5 sentences)*
 
-[Write your answer here.]
+In Round-Robin scheduling, if a process does not finish within its assigned time quantum, it is returned to the end of the ready queue and waits for another CPU turn. In my program output, process P3 did not finish after its first quantum of 2000ms because it still had 757ms remaining. As a result, P3 was re-queued 1 time before it finally completed execution. This re-queueing mechanism is important because it allows all processes to receive CPU time fairly instead of allowing one process to monopolize the CPU. It improves fairness and responsiveness in the scheduling system
 
 Example from my output:
 ```
-[Paste a relevant snippet from your program output here showing a process being re-queued]
+P3 executing quantum [2000ms]
+P3 completed quantum 2000ms
+Remaining time: 757ms
+P3 yields CPU for context switch
+
+P3 added to ready queue | Burst time: 4757ms | Priority: 8
+
 ```
 
 **Explanation of example:**
-[Explain what is happening in the output snippet you pasted.]
-
+The output shows that P3 could not finish during its first time quantum. Since it still had 757ms remaining, it yielded the CPU and was added back to the ready queue. After waiting for another turn, P3 executed again and completed its remaining execution time.
+( P3 be in the ready queued one time )
 ## Question 3: Thread Lifecycle
 
 **Question**: A thread goes through these states: **New**, **Runnable**, **Running**, **Waiting**, **Terminated**. Walk through these states for one process (e.g., P1) from your simulation. For each state, explain **when** P1 enters it and **which line or method call** triggers the transition (`Thread.start()`, `Thread.join()`, `Thread.sleep()`, etc.).
@@ -350,15 +356,15 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences overall; one short explanation per state)*
 
-1. **New**: [When is P1 in the New state?]
+1. **New**: P1 was in the New state when its Thread object was created in addProcessToQueue() before start() was called
 
-2. **Runnable**: [When does P1 become Runnable?]
+2. **Runnable**: P1 became Runnable when the scheduler selected it and called Thread.start() 
 
-3. **Running**: [When is P1 Running?]
+3. **Running**: P1 entered the Running state when its run() method began executing and it started using CPU time.
 
-4. **Waiting**: [When and why would a thread be Waiting?]
+4. **Waiting**: While P1 was executing, Thread.sleep() temporarily paused its thread. The main thread also entered a waiting state when join() was used to wait for P1 to finish
 
-5. **Terminated**: [When is P1 Terminated?]
+5. **Terminated**: P1 reached the Terminated state after run() completed and its remainingTime became 0, meaning the process had finished execution
 
 ## Question 4: Real-World Applications
 
@@ -368,32 +374,34 @@ Example from my output:
 
 **Your Answer:** *(3-5 sentences per example)*
 
-### Example 1 (operating-system level): [Name of scenario]
+### Example 1 (operating-system level): Running Multiple Programs on a Computer
 
 **Description**:
-[Describe the real-world scenario.]
+When I use my computer, I often have several programs open at the same time, such as a browser, a music app, and a document editor. All of these programs need CPU time to continue working smoothly. The operating system schedules them and gives each one a small amount of time to run before moving to the next program
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+Round-Robin works well because it gives every program a fair chance to use the CPU. This keeps the computer responsive and prevents one program from blocking the others. In this situation, each running program acts like a process, the CPU time given to it is the time quantum, and moving the CPU from one program to another is a context switch
 
-### Example 2: [Name of application/scenario]
-
+### Example 2: Online Game Server
 **Description**:
-[Describe the real-world scenario or application.]
+In an online multiplayer game, many players send actions and requests to the server at the same time. The server needs to handle all of them quickly so that the game feels smooth and responsive. Different threads can be used to process these requests
 
 **Why Round-Robin works well here**:
-[Fairness, responsiveness, predictability?]
+Round-Robin helps make sure that no player's requests are ignored for too long. Each thread gets a chance to run, which improves fairness and keeps the game responsive for everyone. In this example, player requests act like processes, the processing time given to each request is the time quantum, and switching between request-handling threads is the context switch
 
 ## Summary
 
 **Key concepts I understood through these questions:**
-1.
-2.
-3.
+
+1. How Round-Robin scheduling shares CPU time fairly between processes
+2. The thread lifecycle and the role of start(), sleep(), and join()
+3. How context switches and the ready queue affect process execution
 
 **Concepts I need to study more:**
-1.
-2.
+
+1. Advanced thread synchronization techniques
+2. Different CPU scheduling algorithms and their performance
+
 
 ---
 
