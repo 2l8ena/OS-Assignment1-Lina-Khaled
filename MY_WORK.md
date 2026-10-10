@@ -39,7 +39,7 @@
 
 ## 🎥 Video Link
 
-**Video Link**: [Paste your video link here]
+**Video Link**: [![Watch Video](https://img.shields.io/badge/▶_WATCH_VIDEO-2ea44f?style=for-the-badge)](https://drive.google.com/drive/folders/1VQuv2YEusnWYQXzJ80Obldum61FALf8A)
 
 > ⚠️ **WARNING:** The video must be **publicly accessible** ("Anyone with the link can view") on **Google Drive**, **YouTube (Unlisted or Public)** or any other cloud file-sharing system. A private, restricted or broken link counts as a **missing video (-1 mark)**.
 >
